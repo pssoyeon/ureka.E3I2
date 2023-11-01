@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Style</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .buttons-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .style-button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #434e9c;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .style-button:hover {
+            background-color: #434e9c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="buttons-container">
+    <h2>Choose Your Fashion Style</h2>
+
+    <!-- Style buttons -->
+    <button class="style-button" onclick="redirectToRecommendationPage('Casual')">Casual</button>
+    <button class="style-button" onclick="redirectToRecommendationPage('Classic')">Classic</button>
+    <button class="style-button" onclick="redirectToRecommendationPage('Bohemian')">Bohemian</button>
+    <button class="style-button" onclick="redirectToRecommendationPage('Trendy')">Trendy</button>
+    <button class="style-button" onclick="redirectToRecommendationPage('Athletic')">Athletic</button>
+    <button class="style-button" onclick="redirectToRecommendationPage('Exotic')">Exotic</button>
+    <button class="style-button" onclick="redirectToRecommendationPage('Business')">Business</button>
+    <button class="style-button" onclick="redirectToRecommendationPage('Street')">Street</button>
+</div>
+
+<script>
+    function redirectToRecommendationPage(style) {
+        location.href = `recommendation.html?style=${style}`;
+    }
+</script>
+
+</body>
+</html>
+
+
+
