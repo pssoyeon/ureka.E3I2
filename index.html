@@ -1,0 +1,32 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clothing Style Selector</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="button-container">
+    <button class="style-button" id="classic">Classic</button>
+    <button class="style-button" id="bohemian">Bohemian</button>
+    <button class="style-button" id="streetwear">Streetwear</button>
+    <button class="style-button" id="vintage">Vintage</button>
+    <button class="style-button" id="minimalist">Minimalist</button>
+    <button class="style-button" id="preppy">Preppy</button>
+    <button class="style-button" id="punk">Punk</button>
+    <button class="style-button" id="athleisure">Athleisure</button>  
+</div>
+
+<!-- Result Container -->
+<div id="loader" class="loader"></div>
+<div id="result-container" style="display:none;">
+    <h2>Recommended Style</h2>
+    <p id="recommendation">Please select a style.</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

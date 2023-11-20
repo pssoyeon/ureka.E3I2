@@ -1,0 +1,90 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color for better readability on dark background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .style-button {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .style-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* You can add specific colors to each button based on the style */
+  #classic { background-color: #e7e0c9; }
+  #bohemian { background-color: #d2a679; }
+  #streetwear { background-color: #707070; }
+  #vintage { background-color: #9a8c98; }
+  #minimalist { background-color: #c5c3c6; }
+  #preppy { background-color: #8faaad; }
+  #punk { background-color: #d62828; }
+  #athleisure { background-color: #4d908e; }
+  
+  /* ... previous styles ... */
+  
+  /* Styles for the result container */
+  #result-container {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to exact center */
+    padding: 20px;
+    background-color: #707070;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2; /* Ensure it's above other content */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width */
+}
+
+.loader {
+  display: none; /* Hidden by default */
+  border: 5px solid #f3f3f3; /* Light grey border */
+  border-top: 5px solid #3498db; /* Blue part of the spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+
+  /* Centering the loader */
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Adding a background box */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 50%; /* Maintains the round shape of the loader */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
