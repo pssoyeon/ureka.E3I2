@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clothing Style Selector</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="centered-text">
+        <h1>Choose<br>your style</h1>
+    </div>
+      
+
+    <div class="grid-container">
+    <div class="style-container">
+        <button class="style-button" id="classic">
+            <img src="image/classic-removebg-preview.png" alt="Classic Style">
+        </button>
+        <span class="style-name">Classic</span>
+    </div>
+
+    <div class="style-container">
+        <button class="style-button" id="bohemian">
+            <img src="image/bohemian-removebg-preview.png" alt="Bohemian Style">
+        </button>
+        <span class="style-name">Bohemian</span>
+    </div>
+
+    <div class="style-container">
+        <button class="style-button" id="streetwear">
+            <img src="image/streetwear-removebg-preview.png" alt="streetwear Style">
+        </button>
+        <span class="style-name">streetwear</span>
+    </div>
+
+    <div class="style-container">
+        <button class="style-button" id="vintage">
+            <img src="image/vintage-removebg-preview.png" alt="Vintage Style">
+        </button>
+        <span class="style-name">Vintage</span>
+    </div>
+    </div>
+
+    <div class="grid-container">
+    <div class="style-container">
+        <button class="style-button" id="minimalist">
+            <img src="image/minimalist-removebg-preview.png" alt="Minimalist Style">
+        </button>
+        <span class="style-name">Minimalist</span>
+    </div>
+
+    <div class="style-container">
+        <button class="style-button" id="preppy">
+            <img src="image/preppy-removebg-preview.png" alt="Preppy Style">
+        </button>
+        <span class="style-name">Preppy</span>
+    </div>
+
+    <div class="style-container">
+        <button class="style-button" id="punk">
+            <img src="image/punk-removebg-preview.png" alt="Punk Style">
+        </button>
+        <span class="style-name">Punk</span>
+    </div>
+
+    <div class="style-container">
+        <button class="style-button" id="athleisure">
+            <img src="image/athleisure-removebg-preview.png" alt="Athleisure Style">
+        </button>
+        <span class="style-name">Athleisure</span>
+    </div>
+    </div>
+
+
+<!-- Result Container -->
+<div id="loader" class="loader"></div>
+<div id="result-container" style="display:none;">
+    <h2>Recommended Style</h2>
+    <p id="recommendation">Please select a style.</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
